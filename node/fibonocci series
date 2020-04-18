@@ -1,0 +1,19 @@
+function fib(n)
+{
+  var lst=[];
+  lst.push(1);
+  lst.push(1);
+  for(i=2;i a+b);
+}
+const rl = require('readline');
+const inp = rl.createInterface({
+	input:process.stdin,
+	output:process.stdout
+});
+var n;
+inp.on('line',(line)=>{
+  n = Number(line);
+});
+inp.on('close',()=>{
+  console.log(fib(n+1)*1000);
+});
